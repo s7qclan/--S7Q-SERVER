@@ -498,7 +498,7 @@ client.on('message', msg => {
 });
 
 client.on('ready', () => {
-     client.user.setActivity(" S7Q 4 EVER",{type: 'WELCOME'});
+     client.user.setActivity("S7Q 4 EVER",{type: 'WATCHING'});
 
 });
 
