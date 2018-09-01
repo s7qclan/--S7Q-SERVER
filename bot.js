@@ -637,10 +637,27 @@ client.on("guildMemberAdd", (member) => {
   const bannedwords = [
     "كسمك",
     "دين امك",
-    "كس احتك",
+    "كس اختك",
     "كس امك",
     "قحبه",
     "امك"
+
+  ];
+
+client.on('message',  message => {
+  if(bannedwords.some(word => message.content.includes(word))) {
+    message.delete()
+    message.reply(" :joy: :joy: :joy:  لا تسب يا توتو  ").then(msg => {msg.delete(5000)});;
+  };
+});
+
+  const bannedwords = [
+    "متناك",
+    "شرموط",
+    "امك شرموطه",
+    "كسمين امك",
+    "علي زبي",
+    "زبي"
 
   ];
 
