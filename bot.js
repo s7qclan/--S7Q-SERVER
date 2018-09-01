@@ -498,7 +498,7 @@ client.on('message', msg => {
 });
 
 client.on('ready', () => {
-     client.user.setActivity("حط الاسم الي تبي هنا",{type: 'WATCHING'});
+     client.user.setActivity(" S7Q 4 EVER",{type: 'WELCOME'});
 
 });
 
