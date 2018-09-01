@@ -631,5 +631,12 @@ client.on('message', message => {
 });
 
 
+client.on('message', message => {
+    if(message.content === '!!'){
+        message.channel.send('***أطلق من دخل السيرفر :champagne_glass::champagne_glass: ***')
+    }
+});
+
+
 //MHSTR END NOW THIS IS END
 client.login(process.env.BOT_TOKEN);
