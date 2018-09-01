@@ -465,18 +465,19 @@ client.on('message', msg => {
   }
 });
 
+  client.on('message', msg => {//msg
+    if (msg.content === '!') {
+      msg.channel.send({file : "**Welcome To S7Q Clan..:champagne_glass:**"})
+    }
+  });;
 
-client.on('message', msg => {
-  if (msg.content === '!') {
-    msg.reply('**Welcome To S7Q Clan..:champagne_glass:**');
-  }
-});
+  client.on('message', msg => {//msg
+    if (msg.content === '!!') {
+      msg.channel.send({file : "***أطلق من دخل السيرفر :champagne_glass::champagne_glass: ***"})
+    }
+  });;
 
-client.on('message', msg => {
-  if (msg.content === '!!') {
-    msg.reply('***أطلق من دخل السيرفر :champagne_glass::champagne_glass: ***');
-  }
-});
+
 
 
 client.on('ready', () => {
@@ -632,6 +633,7 @@ client.on("guildMemberAdd", (member) => {
 
      }
        });
+
   
 
 //MHSTR END NOW THIS IS END
