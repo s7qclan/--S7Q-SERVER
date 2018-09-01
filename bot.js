@@ -496,6 +496,20 @@ client.on('message', msg => {
   }
 });
 
+
+client.on('message', msg => {
+  if (msg.content === '!') {
+    msg.reply('**Welcome To S7Q Clan..:champagne_glass:**');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '!!') {
+    msg.reply('***أطلق من دخل السيرفر :champagne_glass::champagne_glass: ***');
+  }
+});
+
+
 client.on('ready', () => {
      client.user.setActivity("S7Q 4 EVER",{type: 'WATCHING'});
 
