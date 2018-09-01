@@ -443,5 +443,59 @@ var mentionned = message.mentions.members.first();
          
      });
 
+
+client.on('message', message => {
+    if(message.content === 'الشعار'){
+        message.channel.send(':arrow_down:شعار دسكورد ')
+    }
+});
+
+
+client.on('message', message => {
+    if(message.content === 'الشعار'){
+        message.channel.send('``!S7Q |``')
+    }
+});
+
+client.on('message', message => {
+    if(message.content === 'الشعار'){
+        message.channel.send(':arrow_down:شعار العبه')
+    }
+});
+
+client.on('message', message => {
+    if(message.content === 'الشعار'){
+        message.channel.send('``ζ͡𝒮𝟳𝒬``')
+    }
+});
+
+
+
+client.on('message', msg => {
+  if (msg.content === 'برب') {
+    msg.reply('**``ٺــٻۧــټ ۖ ڀــٰ̍ا̍ ۛ ּحۡــڷــﯡۥ ۛ ּلآتـطــۄڸ ۗ``::disappointed::broken_heart:**');
+  }
+});
+
+
+
+
+
+
+
+
+client.on('message', msg => {
+  if (msg.content === 'باك') {
+    msg.reply('** ۗ`` وّلّلّّكّكّممّّ نۨــۏڕٺ ۛ ּيۧ مۭــڗ ۛ ּ، ۛ ּمۭــنۨ ۖ ڙمۭــٰا̍نۨ ̨؏ــڼۨــک ۗ ``:rose::wave:**');
+  }
+});
+
+
+client.on('message', msg => {
+  if (msg.content === '.') {
+    msg.reply('***أطلق اثبات وجود :hearts: ***');
+  }
+});
+
 //MHSTR END NOW THIS IS END
 client.login(process.env.BOT_TOKEN);
