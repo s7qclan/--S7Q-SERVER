@@ -497,5 +497,10 @@ client.on('message', msg => {
   }
 });
 
+client.on('ready', () => {
+     client.user.setActivity("حط الاسم الي تبي هنا",{type: 'WATCHING'});
+
+});
+
 //MHSTR END NOW THIS IS END
 client.login(process.env.BOT_TOKEN);
